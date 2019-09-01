@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Long Life 2.0</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+</head>
+
+<body>
+    <% include blocks/nav.ejs %>
+    <% include blocks/subtopnav.ejs %>
+    <% include blocks/mainSlider.ejs %>
+    <div class="main-content">
+        <h1>Особенности системы</h1>
+        <div class="content1">
+            <img src="..\images\example-pic1.png">
+            <div class="discription-flex">
+                <h3>Удобная аналитика</h3>
+                <article>Благодаря нашей программе вы с легкостью сможете узнать информацию о состоянии силового
+                    трансформатора и увидеть рекомендации по его эксплуатации, всего лишь загрузив уже имеющиеся данные.
+                </article>
+            </div>
+        </div>
+        <div class="content1">
+            <div class="discription-flex">
+                <h3>Перспектива</h3>
+                <article>Уже в ближайшем будущем наша программа сможет локализировать проблему, четко определив причину
+                    потенциальной поломки. Таким образом, мы сможем предотвратить незапланированные затраты на ремонт
+                    вашего трансформатора.</article>
+            </div>
+            <img src="..\images\example-pic2.png">
+        </div>
+        <div class="content1">
+            <img src="..\images\example-pic3.png">
+            <div class="discription-flex">
+                <h3>Функциональность</h3>
+                <article> Наша программа обладает высоким функционалом по сравнению с ручной аналитикой, что позволяет
+                    вам не волноваться о достоверности состояния силового трансформатора.</article>
+            </div>
+        </div>
+
+    </div>
+    <section class="process-body">
+        <div class="process-heading">Процесс работы</div>
+        <div class="process">
+            <div class="process-part">
+                <div class="process-num" id="process-num1">1</div>
+                <h3>Загрузка файла</h3>
+                <div class="process-text">Просто загрузите таблицу данных</div>
+            </div>
+            <div class="process-part">
+                <div class="process-num" id="process-num2">2</div>
+                <h3>Обработка данных</h3>
+                <div class="process-text">Происходят быстрые вычисления</div>
+            </div>
+            <div class="process-part">
+                <div class="process-num" id="process-num3">3</div>
+                <h3>Результат</h3>
+                <div class="process-text">Вы получите предиктивную<br /> статистику трансформатора</div>
+            </div>
+        </div>
+    </section>
+    <div class="learn-more">
+        <a href="/about-us">Узнать больше</a>
+    </div>
+    <% include blocks/footer.ejs %>
+    <script src="../public/scripts/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+    <title>Программа</title>
+</head>
+
+<body>
+    <% include blocks/nav.ejs %>
+    <div style="width: 1000px; margin: 50px auto;">
+        <form method="POST" action="/load-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Имя документа</label>
+                <input type="text" name="process" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Выберите тип трансформатора</label>
+                <select class="form-control" name="transformator-type" id="exampleFormControlSelect1">
+                    <option>Трансформатор малый</option>
+                    <option>Трансформатор средний</option>
+                    <option>Трансформатор большой</option>
+                    <option>Трансформатор огромный</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Данные о трансформаторе</label>
+                <input type="file" name="filedata" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Загрузить</button>
+        </form>
+    </div>
+</body>
+
+</html>

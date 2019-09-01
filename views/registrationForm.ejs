@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/font-awesome.css">
+    <link rel="stylesheet" href="../public/css/style-log-in.css">
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <% include blocks/nav.ejs %>
+    <div class="container">
+        <img src="/public/images/icons/accicon.png" class="account-pic">
+        <form method="POST" action="/user-reg" enctype="multipart/form-data">
+            <div id="inputError"></div>
+            <div class="dws-input">
+                <input type="text" name="companyName" id="companyName" placeholder="Введите название компании">
+            </div>
+            <div class="dws-input">
+                <input type="text" name="userName" id="userName" placeholder="Введите логин">
+            </div>
+            <div class="dws-mail">
+                <input type="text" name="userEmail" id="userEmail" placeholder="Введите почту">
+            </div>
+            <div class="dws-input">
+                <input type="password" name="password" id="password" placeholder="Придумайте пароль">
+            </div>
+            <div class="dws-input">
+                <input type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Повторите пароль">
+            </div>
+            <div class="dws-input" id="submit-div">
+                <input class="dws-register" type="submit" name="submit" value="Продолжить">
+            </div>
+            <!--<a href="/sign-in.html" class="dws-resetpass">Уже есть аккаунт</a>-->
+        </form>
+    </div>
+    <script src="../public/scripts/regForm.js"></script>
+</body>
+
+</html>

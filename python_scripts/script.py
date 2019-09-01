@@ -1,0 +1,5 @@
+path=str(input())
+f=open(path,"r")
+a=f.read()
+f.close()
+print('50%')

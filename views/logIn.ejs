@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style-sign-in.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/font-awesome.css">
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <% include blocks/nav.ejs %>
+    <div class="container">
+        <img src="../public/images/icons/accicon.png" class="account-pic">
+        <form>
+            <div class="dws-input">
+                <input type="text" name="username" placeholder="Введите логин">
+            </div>
+            <div class="dws-input">
+                <input type="password" name="password" placeholder="Введите пароль">
+            </div>
+            <input class="dws-submit" type="submit" name="submit" value="Войти">
+            <!-- <input class = "dws-register" type = "submit" name = "submit" value = "Регистрация"> -->
+
+            <br />
+            <a href="/" class="dws-register">Регистрация</a>
+
+            <a href="/" class="dws-resetpass">Восстановить пароль</a>
+        </form>
+    </div>
+    <script src="../public/scripts/account.js"></script>
+</body>
+
+</html>

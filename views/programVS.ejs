@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Виртуальный датчик</title>
+    <link rel="stylesheet" href="../public/css/program-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script type="text/javascript" src="../public/scripts/grloader.js"></script> -->
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <h1>Long Life 2.0</h1>
+            <a href="/virtual-sensor" class="vspd-button-load">Виртуальный датчик</a>
+            <a href="/prediction" class="vspd-button">Прогноз на сутки</a>
+            <a href="/program" class="exit-button">Выход</a>
+        </div>
+    </header>
+    <div id="load-icon">
+        <img src="../public/images/icons/loading.gif" alt="" style="width: 200px; height: 200px;">
+        <div class="process-heading" id="answer-generation">Процесс работы</div>
+    </div>
+    <div id="grgrgrg">
+        <section class="inform">
+            <div class="progress">
+                <div class="progress-text"></div>
+                <div class="progress-slider" id="s1"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-text"></div>
+                <div class="progress-slider" id="s2"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-text"></div>
+                <div class="progress-slider" id="s3"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-text"></div>
+                <div class="progress-slider" id="s4"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-text"></div>
+                <div class="progress-slider" id="s5"></div>
+            </div>
+        </section>
+
+        <section class="graphs">
+            <div class="graph-col">
+                <div class="graph" id="graph1">
+
+                </div>
+                <div class="graph" id="graph3">
+
+                </div>
+            </div>
+            <div class="graph-col">
+                <div class="graph" id="graph2">
+
+                </div>
+                <div class="graph" id="graph4">
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <% include blocks/footer.ejs %>
+    <script src="../public/scripts/dataOut.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Long Life</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=CenturyGothic&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body style="background-image: none">
+    <div id="intro">
+        <div class="topnav">
+            <div class="nav">
+                <a href="/registration">Регистрация</a>
+            </div>
+        </div>
+        <div class="topnav">
+            <div class="nav">
+                <a href="/about-us">О проекте</a>
+            </div>
+            <div class="nav">
+                <a href="/program">Программа</a>
+            </div>
+            <div class="nav">
+                <a href="/">Главная</a>
+            </div>
+        </div>
+        <div class="intro-text">
+            <article><b>Анализируйте своё оборудование с Long&nbspLife</b></article>
+        </div>
+        <div class="subintro-text">
+            <div>Умный продукт, работающий на базе машиного обучения и нейронных сетей</div>
+        </div>
+    </div>
+    <div id="load-icon" style="width: 200px; height: 200px; margin: 200px auto;">
+        <img src="../public/images/icons/loading.gif" alt="" style="width: 200px; height: 200px;">
+        <p id="answer-generation"></p>
+    </div>
+    <section>
+        <div style="width: 1000px; margin: 50px auto;">
+            <form method="POST" action="/load-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Имя документа</label>
+                    <input type="text" name="documentName" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Выберите тип трансформатора</label>
+                    <select class="form-control" name="transformatorType" id="exampleFormControlSelect1">
+                        <option>Трансформатор малый</option>
+                        <option>Трансформатор средний</option>
+                        <option>Трансформатор большой</option>
+                        <option>Трансформатор огромный</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Данные о трансформаторе</label>
+                    <input type="file" name="filedata" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                    <label for="email">Введите e-mail</label>
+                    <input type="text" name="userEmail">
+                </div>
+                <div class="form-group">
+                    <label for="password">Введите пароль</label>
+                    <input type="password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Загрузить</button>
+            </form>
+        </div>
+        <div id="line_chart1" style="width: 900px; height: 500px; margin-left: 500px;"></div>
+        <div id="line_chart2" style="width: 900px; height: 500px"></div>
+        <div id="line_chart3" style="width: 900px; height: 500px"></div>
+        <div id="line_chart4" style="width: 900px; height: 500px"></div>
+    </section>
+    <footer>
+        <div class="copyright">Copyright</div>
+    </footer>
+    <script src="../public/scripts/dataOut.js"></script>
+</body>
+
+</html> -->

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>О нас</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/about-page-style.css">
+    <link rel="stylesheet" href="../public/css/style-slider.css">
+    <link rel="shortcut icon" href="../public/images/logo2.png">
+</head>
+
+<body>
+    <% include blocks/nav.ejs %>
+    <% include blocks/mainSlider.ejs %>
+    <secion class="content-row">
+        <div class="text-content-col">
+            <h3>Разработанные технологии</h3>
+            <p>Данный продукт использует технологию <b>LL2.0</b>, разработанную нашей командой. За счет технологий
+                <b>Deep Learning</b> и <b>Big Data</b>
+                производится предиктивный анализ технического состояния трансформатора.</p>
+            <p>Достоверность предиктивной оценки подтверждается данными полученными с действующих трансформаторов за
+                трехлетний период.
+                Система обладает хорошей масшатабируемостью и универсальностью, так как способна анализировать множество
+                типов трансформаторов.
+            </p>
+        </div>
+        <div class="image-content1-col">
+            <img src="../public/images/LL2-example-pic.png">
+        </div>
+    </secion>
+    <secion class="content-row">
+        <div class="image-content1-col">
+            <img src="../public/images/Data-example-pic.png">
+        </div>
+        <div class="text-content-col">
+            <h3>Используемые технологии</h3>
+
+            <p>
+                Для удобной работы с продуктом был создан глобальный ресурс.
+                Визуализация входящих данных, обработанных серверной частью, происходит за счет графической оболочки.
+            </p>
+            <p>
+                В процессе разработки использовались соответствующие наборы технологий:
+            </p>
+            <p>
+                Frontend: <b>JavaScript V8</b> + <b>HTML5</b> + <b>CSS3</b>.
+            </p>
+            <p>
+                Backend: <b>Node.js</b> + <b>Express.js</b> + <b>MongoDB</b>.
+            </p>
+            <p>
+                Deep Learning: <b>Python3</b> + <b>Keras</b> + <b>TensorFlow</b>.
+            </p>
+        </div>
+    </secion>
+    <section class="boofer-zone">
+        <h1>СОСТАВЛЯЮЩИЕ СИСТЕМЫ</h1>
+        <div class="boofer">
+            <div class="boofer-col">
+                <div class="boofer-obj">
+                    <img src="../public/images/Function1.png">
+                    <div class=boofer-text>
+                        <h1>АНАЛИТИКА</h1>
+                    </div>
+                </div>
+                <div class="boofer-obj">
+                    <img src="../public/images/Function2.png">
+                    <div class=boofer-text>
+                        <h1>ПРОСТОТА</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="boofer-col">
+                <div class="boofer-obj">
+                    <img src="../public/images/Function3.png">
+                    <div class=boofer-text>
+                        <h1>ЭКОНОМИКА</h1>
+                    </div>
+                </div>
+                <div class="boofer-obj">
+                    <img src="../public/images/Function4.png">
+                    <div class=boofer-text>
+                        <h1>ФУНКЦИОНАЛЬНОСТЬ</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="perspective-heading">Наши перспективы</h1>
+    <section class="cards">
+        <div class="card">
+            <h1>Определение локализации проблемы</h1>
+            <p>
+                Уже в ближайшем будущем наш продукт сможет определять точное местоположение проблемной зоны.
+                <!-- Благодаря этому достаточно будет подвергнуть трансформатор точечному ремонту, а не производить общую
+                диагностику. -->
+            </p>
+        </div>
+        <div class="card">
+            <h1>Работа в режиме <br />online</h1>
+            <p>
+                Данная функция позволит в режиме реального времени следить за показаниями датчиков, установленных на трансформаторе.
+            </p>
+        </div>
+        <div class="card">
+            <h1>Прогнозирование <br />других параметров</h1>
+            <p>
+                Помимо предсказываемых параметров, наши пользователи смогут отслеживать и другие показатели, например, частичные разряды. 
+            </p>
+        </div>
+    </section>
+    <% include blocks/aboutSlider.ejs %>
+    <% include blocks/footer.ejs %>
+    <script src="../public/scripts/slider.js"></script>
+</body>
+
+</html>

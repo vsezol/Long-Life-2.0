@@ -1,0 +1,121 @@
+.dws-resetpass
+{
+    padding: 13px 5px;
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Andale Mono", monospace;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+
+.dws-register
+{
+    padding: 13px 4px;
+    margin: 0px 0 20px 0;
+    margin-left: -4px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Andale Mono", monospace;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+
+.dws-resetpass:hover
+{
+    transition: all 0.25s;
+    background: #2cafd6;
+    color: #2c536c
+
+}
+.dws-register:hover
+{
+    transition: all 0.25s;
+    background: #2cafd6;
+    color: #2c536c
+
+}
+
+.container
+{
+    width: 450px;
+    height: 600px;
+    margin: 200px auto 0 auto;
+    text-align: center;
+    /*
+    box-shadow: 5px 5px 9px #999999;
+    border-radius: 4px
+    */
+}
+
+input[type = "text"], input[type = "password"]
+{
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.account-pic
+{
+    width: 320px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.dws-submit
+{
+    padding: 12px 30px;
+    margin: 5px 0 20px 0;  
+    font-size: 18px;
+    width: 320px;
+    font-family: "Andale Mono", monospace;
+    color: #ffffff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+.dws-submit:hover
+{
+    transition: all 0.25s;
+    background: #2cafd6;
+    color: #2c536c
+
+}
+
+/* .dws-input::before
+{
+    font-family: "FontAwesome";
+    content: "\f007";
+    position: absolute;
+    font-size: 38px;
+    padding: 10px 0 0 7px;
+    color: #d1e3ee;
+}
+
+.dws-input:nth-child(2)::before
+{
+    content: "\f023";
+    font-size: 38px;
+    padding: 10px 0 0 7px;
+    color: #2c536c;
+} */
+
+.dws-input input:hover
+{
+    box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+.dws-input
+{
+    border: none;
+}

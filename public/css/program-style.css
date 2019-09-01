@@ -1,0 +1,421 @@
+html {
+    overflow-x: hidden;
+    margin-bottom: 0px;
+}
+
+body {
+    width: 100%;
+    margin: 0 0;
+    height: 100vh;
+}
+
+.bar {
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../images/boofer-zone.png");
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    background-position-x: 800px;
+}
+
+.bar h1 {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.bar a {
+    transition: all 0.5s;
+    text-decoration: none;
+    /* color: #fff; */
+    /* text-align: right; */
+    /* float: right; */
+    padding: 10px 10px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    font-size: 14px;
+    font-family: "montserrat", sans-serif;
+    /* margin-right: 32px; */
+}
+
+.exit-button {
+    transition: all 0.5s;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-family: "monoserrat", sans-serif;
+    margin-right: 32px;
+    border: 2px solid #fff;
+    width: 48px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.exit-button:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: rgb(0, 153, 255);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 300px;
+    height: 32px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    font-size: 20px;
+    float: center;
+    border: 1px solid #000;
+}
+
+.forms label {
+    color: #241f66;
+    font-size: 20px;
+    font-family: "monoserrat", sans-serif;
+    float: center;
+}
+
+.forms {
+    /* border-top: 8px solid rgb(0, 162, 255); */
+    padding: 20px 20px;
+    width: 320px;
+    height: 480px;
+    float: center;
+    /* margin: 130px auto; */
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 32px; */
+    border-radius: 32px;
+    box-shadow: 0px 0px 10px #999;
+    background-image: url("../images/form-background.png");
+}
+
+select {
+    width: 302px;
+    height: 38px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 1px solid #241f66;
+}
+
+.custom-file-input {
+    color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 300px;
+}
+
+.custom-file-input::before {
+    transition: all 0.5s;
+    content: 'Загрузите файл';
+    color: #fff;
+    width: 300px;
+    height: 24px;
+    padding-top: 4px;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    background: rgb(0, 162, 255);
+    border-bottom: 4px solid rgb(0, 195, 255);
+    /* padding: 5px 8px; */
+    /* outline: none; */
+    /* white-space: nowrap; */
+    /* -webkit-user-select: none; */
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "monoserrat", sans-serif;
+    /* margin-bottom: 20px */
+}
+
+.custom-file-input:hover::before {
+    box-shadow: 10px #00ffff;
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.btn-btn-primary-mb-2 {
+    transition: all 0.5s;
+    float: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: auto auto;
+    border: none;
+    width: 300px;
+    padding: auto auto;
+    height: 32px;
+    border-bottom: 4px solid rgb(0, 195, 255);
+    color: #fff;
+    font-size: 18px;
+    font-family: "monoserrat", sans-serif;
+    background: rgb(0, 162, 255);
+}
+
+.btn-btn-primary-mb-2:hover {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 10px #00aaff;
+}
+
+.graphs {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+    /* overflow: hidden; */
+}
+
+.graph-col {
+    flex-direction: column;
+    overflow: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.graph {
+    /* transition: all .5s ease;
+    cursor: pointer;
+    transform: scale(1);
+    perspective: 550px; */
+
+    width: 800px;
+    height: 400px;
+    box-shadow: 0px 0px 10px #868686;
+    background: #fff;
+    border-radius: 8px;
+    margin: 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.graph:hover {
+    /* transform: scale(1.5) translate3d(0, 0px, 0); */
+}
+
+.copyright {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    background: linear-gradient(-60deg, #016c9e, #0098df);
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    overflow: flex;
+}
+
+.copyright {
+    margin-top: auto;
+    vertical-align: bottom;
+    width: calc(100% - 32px);
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: linear-gradient(-60deg, #016c9e, #0098df);
+}
+
+.copyright div {
+    width: auto;
+    float: center;
+    padding-right: 32px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    overflow: flex;
+}
+
+.footer-text2 {
+    float: right;
+    text-align: right;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.footer-text1 {
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.logo {
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-left: 32px;
+    width: 96px;
+    height: 80px;
+}
+
+.logo-ros {
+    width: 96px;
+    height: 96px;
+    padding: 0px 30px;
+}
+
+#grgrgrg {
+    display: none;
+}
+
+.process-heading {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #241f66;
+    float: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#load-icon {
+    width: 200px;
+    height: 250px;
+    margin: 250px auto;
+}
+
+.inform {
+    width: 95%;
+    float: center;
+    max-width: 1640px;
+    margin: 35px auto;
+    overflow: hidden;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #868686;
+    background-image: url("../images/boofer-zone.png");
+}
+
+.progress {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.progress-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    /* font-weight: 550; */
+    font-size: 20px;
+}
+
+/* .progress-slider
+{
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+} */
+
+#s5 {
+    height: 20px;
+    /* background: linear-gradient(90deg, #ef0 73%, #fff 0%); */
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+}
+
+#s1 {
+    /* background: linear-gradient(90deg, #8f0 81%, #fff 0); */
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+}
+
+#s2 {
+    /* background: linear-gradient(90deg, #ef0 69%, #fff 0); */
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+}
+
+#s3 {
+    /* background: linear-gradient(90deg, #0f0 92%, #fff 0); */
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+}
+
+#s4 {
+    /* background: linear-gradient(90deg, #ff0 64%, #fff 0); */
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    border-radius: 32px;
+    border: 2px solid #fff;
+}
+
+.vspd-button {
+    transition: all 0.5s;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-family: "monoserrat", sans-serif;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 2px solid #fff;
+    width: 200px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.vspd-button-load {
+    transition: all 0.5s;
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+    background-color: #fff;
+    font-family: "monoserrat", sans-serif;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 2px solid #fff;
+    width: 200px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.vspd-button:hover {
+    transition: all 0.5s;
+    background-color: #fff;
+    color: rgb(0, 153, 255);
+}
