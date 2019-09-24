@@ -8,7 +8,8 @@ let express = require("express"),
     app = express();
 
 const MongoClient = require('mongodb').MongoClient,
-    url = 'mongodb://localhost:27017/usersdb';
+    // url = 'mongodb://localhost:27017/usersdb';
+    url = 'mongodb+srv://vsezol:vsezol2535@cluster0-y7zth.mongodb.net/test?retryWrites=true&w=majority';
 
 let db;
 
@@ -22,13 +23,13 @@ const jsonParser = express.json();
 //==============================
 //подключение питона
 //==============================
-let {
-    PythonShell
-} = require('python-shell'),
-    pyshell = new PythonShell('python_scripts/LongLife.py'),
-    pythonMessage = "";
-    pyshell2 = new PythonShell('python_scripts/Prediction.py'),
-    pythonMessage2 = "";
+// let {
+//     PythonShell
+// } = require('python-shell'),
+//     pyshell = new PythonShell('python_scripts/LongLife.py'),
+//     pythonMessage = "";
+//     pyshell2 = new PythonShell('python_scripts/Prediction.py'),
+//     pythonMessage2 = "";
 
 let userId = '';
 //==============================
@@ -103,14 +104,14 @@ app.post('/load-form', urlencodedParser, (req, res) => {
             //отправка пути файла питону
             if (inputForm.requestType == '1') {
                 //Virtual sensor
-                pyshell.send(fileData.path);
-                pyshell.send(userId);
+                // pyshell.send(fileData.path);
+                // pyshell.send(userId);
                 userId = String(userId);
                 console.log("run VS py");
             } else if (inputForm.requestType === '2') {
                 //PR
-                pyshell2.send(fileData.path);
-                pyshell2.send(userId);
+                // pyshell2.send(fileData.path);
+                // pyshell2.send(userId);
                 userId = String(userId);
                 console.log("run PR py");
             }
@@ -127,15 +128,15 @@ app.post('/load-form', urlencodedParser, (req, res) => {
 //==============================
 //событие получение сообщения от питона
 //==============================
-pyshell.on('message', (message) => {
-    pythonMessage = message;
-    console.log(`Message from VS py ${pythonMessage}`);
-});
+// pyshell.on('message', (message) => {
+//     pythonMessage = message;
+//     console.log(`Message from VS py ${pythonMessage}`);
+// });
 
-pyshell2.on('message', (message) => {
-    pythonMessage2 = message;
-    console.log(`Message from VS py ${pythonMessage2}`);
-});
+// pyshell2.on('message', (message) => {
+//     pythonMessage2 = message;
+//     console.log(`Message from VS py ${pythonMessage2}`);
+// });
 
 app.post('/get-graphics', jsonParser, (req, res) => {
 
